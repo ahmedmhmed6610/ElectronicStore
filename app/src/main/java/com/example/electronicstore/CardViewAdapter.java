@@ -121,6 +121,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
                 if (constraint == null || constraint.length() == 0) {
                     results.values = Iname ;
                     results.count = Iname.size();
+                      Iname.addAll(Iname);
 
                 } else {
                     String filterPattern = constraint.toString().toLowerCase().trim();
